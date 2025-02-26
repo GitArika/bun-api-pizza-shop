@@ -3,13 +3,17 @@ import { createId } from '@paralleldrive/cuid2'
 import { users } from './users'
 import { relations } from 'drizzle-orm'
 
+const varcharConfig = {
+  length: 255,
+}
+
 export const restaurants = pgTable('restaurants', {
-  id: varchar('id')
+  id: varchar('id', varcharConfig)
     .$defaultFn(() => createId())
     .primaryKey(),
-  name: varchar('name').notNull(),
-  description: varchar('decription'),
-  managerId: varchar('manager_id').references(() => users.id, {
+  name: varchar('name', varcharConfig).notNull(),
+  description: varchar('decription', varcharConfig),
+  managerId: varchar('manager_id', varcharConfig).references(() => users.id, {
     onDelete: 'set null',
   }),
   createdAt: timestamp('created_at').defaultNow().notNull(),
