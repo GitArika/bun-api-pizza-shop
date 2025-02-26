@@ -17,6 +17,7 @@
     "@eslint/js": "^9.21.0",
     "@faker-js/faker": "^9.5.0",
     "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.9",
     "drizzle-kit": "^0.30.4",
     "eslint": "^9.21.0",
     "globals": "^16.0.0",
@@ -24,12 +25,13 @@
     "typescript-eslint": "^8.24.1"
   },
   "dependencies": {
-    "@elysiajs/cookie": "^0.8.0",
     "@elysiajs/jwt": "^1.2.0",
     "@paralleldrive/cuid2": "^2.2.2",
     "chalk": "^5.4.1",
+    "dayjs": "^1.11.13",
     "drizzle-orm": "^0.39.3",
     "elysia": "^1.2.21",
+    "jsonwebtoken": "^9.0.2",
     "postgres": "^3.4.5",
     "zod": "^3.24.2"
   }
