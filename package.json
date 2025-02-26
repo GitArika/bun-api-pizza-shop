@@ -24,6 +24,8 @@
     "typescript-eslint": "^8.24.1"
   },
   "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/jwt": "^1.2.0",
     "@paralleldrive/cuid2": "^2.2.2",
     "chalk": "^5.4.1",
     "drizzle-orm": "^0.39.3",
